@@ -2,7 +2,7 @@
 
 namespace PII_Game_Of_Life
 {
-    public class Class1
+    public class ArchiveReader
     {
     }
 }

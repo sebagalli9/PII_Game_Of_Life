@@ -7,6 +7,11 @@ namespace PII_Game_Of_Life
 {
     public class ArchiveReader
     {
+        /*  Esta clase tiene cómo única responsabilidad importar un tablero
+            de acuerdo a la información obtenida mediante un archivo de texto,
+            por lo tanto cumple con el principio SRP, debido a que la única razón 
+            de cambio posible es cambiar el tipo de archivo a interpretar.
+        */
         
         public static bool[,] GetBoard(string url){
 
@@ -23,11 +28,7 @@ namespace PII_Game_Of_Life
                     }
                 }
             }
-
             return board;
         }
-        
-     
-        
     }
 }

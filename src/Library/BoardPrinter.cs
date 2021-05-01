@@ -6,6 +6,11 @@ namespace PII_Game_Of_Life
 {
     public class BoardPrinter
     {
+        /*  La clase BoardPrinter tiene como única razón 
+            de cambio, modificar la forma en la que el tablero
+            se muestra en consola, por lo tanto cumple con el 
+            principio SRP.
+        */
 
        public static string PrintBoard(Board board)
        {
@@ -27,8 +32,6 @@ namespace PII_Game_Of_Life
                     s.Append("\n");
                 }
                 return(s.ToString());
-
-
        }
     }
 }

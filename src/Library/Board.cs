@@ -4,6 +4,10 @@ namespace PII_Game_Of_Life
 {
     public class Board
     {
+        /*  La única responsabilidad de la clase Board es generar un tablero,
+            y cumple con el principio SRP, ya que la única razón de 
+            cambio posible es cambiar la forma en que se genera el tablero.
+        */
     
         public int Width {get; set;}
         public int Height { get; set; }
@@ -38,7 +42,5 @@ namespace PII_Game_Of_Life
         {
             this.board[posX,posY] = alive;
         }
-
-
     }
 }

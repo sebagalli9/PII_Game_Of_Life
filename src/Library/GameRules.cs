@@ -4,6 +4,12 @@ namespace PII_Game_Of_Life
 {
     public class GameRules
     {
+        /*  La clase GameRules cumple con el principio SRP, debido a que
+            su única razón de cambio posible es cambiar las reglas del juego. 
+            Esta clase tiene como responsabilidad actualizar el tablero de acuerdo
+            a las reglas del juego, y como es la clase encargada de generar una 
+            nueva instancia del tablero, cumple con el patrón Expert.
+        */
          
         public Board Board{get; set;}
 
@@ -16,7 +22,7 @@ namespace PII_Game_Of_Life
         {
             Board newBoard = new Board(this.Board.Width, this.Board.Height);
 
-           for (int x = 0; x < Board.Width; x++)
+            for (int x = 0; x < Board.Width; x++)
             {
                 for (int y = 0; y < Board.Height; y++)
                 {

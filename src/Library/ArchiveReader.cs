@@ -8,9 +8,6 @@ namespace PII_Game_Of_Life
     public class ArchiveReader
     {
         
-
-
-
         public static bool[,] GetBoard(string url){
 
             string content = File.ReadAllText(url);
